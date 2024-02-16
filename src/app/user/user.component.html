@@ -1,0 +1,8 @@
+<section>
+  @if (isLoggedIn) {
+    <h2>Bienvenido {{username}}</h2>
+  } @else {
+    <h2>Inicia Sesión</h2>
+    <button (click)="isLoggedIn=true">Log In</button>
+  }
+</section>
